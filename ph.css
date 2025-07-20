@@ -1,0 +1,382 @@
+
+/* M6-5.1 seudo class,nth child */
+
+/* .pseudo-element p {
+    color: red;
+}
+
+.pseudo-element p:hover{
+    color: blue;
+}
+
+input:focus{
+    color: red;
+    background-color: aquamarine;
+}
+input[type="text"]{
+    width: 200px;
+    color: aqua;
+}
+
+.abc p:last-child{
+    color: aquamarine;
+}
+.abc p:nth-child(2n+1){
+    color: burlywood;
+} */
+
+/* M6-5.2 css position */
+
+/* 
+.rela{
+    
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+
+}
+.abs{
+    position:;
+    height: 50px;
+    width: 50px;
+    border: 2px solid blue;
+    margin-left: 500px;
+}
+.abs1{
+    position:;
+    height: 50px;
+    width: 50px;
+    border: 2px solid blue;
+    margin-left: ;
+}
+.abs2{
+    position:;
+    height: 50px;
+    width: 50px;
+    border: 2px solid blue;
+    margin-left: ;
+} */
+
+/* M6-5.3 zindex */
+
+/* .all{
+  
+    height: 400px;
+    width: 300px;
+    position: relative;
+}
+
+.zindx1{
+    
+    height:200px ;
+    width:200px ;
+    z-index: 2;
+    background-color:red ;
+    box-shadow: 0 5px 5px 0 ;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 50px;
+     
+}
+.zindx2{
+
+    height:200px ;
+    width:200px ;
+    z-index: 4;
+    margin-top:20px;
+    background-color: yellow;
+    box-shadow: 0 5px 5px 0 ;
+    margin-left: 20px;
+    position: absolute;
+
+}
+.zindx3{
+ 
+    height:200px ;
+    width:200px ;
+    z-index: 6;
+    background-color: green;
+    box-shadow: 0 5px 5px 0 ;
+    position: absolute;
+
+} */
+
+/* M7.2 flex direction */
+
+/* .box{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    display: ;
+    height: 50px;
+    width: 50px;
+    margin: 0px 20px 20px 300px;
+    flex-wrap: wrap;
+    
+}
+.main{
+    height: 400px;
+    width: 90vw;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around ;
+    
+}
+body{
+    overflow: hidden;
+} */
+
+
+/* M7.3 create nav with flex */
+
+/* nav{
+    justify-content: space-between;
+    display: flex;
+
+}
+ 
+.from-design{
+    border: 2px solid green;
+    height: 200px;
+    width: 90vw;
+    display:flex;
+    justify-content: center;
+}
+
+.from-section{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 40%;
+     justify-content: center;
+}
+
+.from-section input{
+    margin-top: 20px;
+}
+
+body{
+    overflow: hidden;
+}  */
+
+
+/* M7.4 grid template columns */
+
+
+/* .container{
+    display: grid;
+    grid-template-columns: 200px 200px auto ;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: center;
+
+
+
+}
+
+
+.item{
+    border: 2px solid black ;
+
+} */
+
+/* M7.5 calander by grid */
+
+/* .calander{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 4px;
+    column-gap: 4px;
+}
+.box, .day{
+    border: 2px solid yellow;
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.day{
+    background-color: antiquewhite;
+} */
+
+/* M7.6/7 media query */
+
+/* .container{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+.cart{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.cart img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    }
+    
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    }
+@media screen and (min-width: 992px) {
+    .container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+} */
+
+/* M8.2 simple responsive example */
+
+/* img{
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    height: 300px;
+
+}
+
+.vertical-collage>img{
+    height: calc((100% - 5px)/2);
+ 
+}
+
+.row > div{
+    flex: 1;
+}
+
+.box-collage{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 5px;
+}
+@media screen and (max-width: 576px) {
+   .row{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+
+   }
+   .box-collage{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   }
+    
+}
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .row{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+
+   }
+
+
+
+} */
+
+/* M8.3 responsive flex and grid layout */
+
+/* .box{
+    background-color: gray;
+    display: flex;
+     justify-content: center;   
+    align-items: center;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px)50px 50px;
+    gap: 10px;
+   
+}
+#box1{
+    grid-row: span 5;
+}
+
+#box11, #box12{
+    grid-column: span 3;
+} */
+
+
+/*  M8.4 practical grid area layout and media query */
+
+/* .header, .nav, .main, .sidebar, .advertising, .footer{
+    background-color: bisque;
+    border: 2px solid tomato;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+.header{
+    grid-area:header;
+}
+.nav{
+    grid-area:nav;
+}
+.main{
+    grid-area:main;
+}
+.sidebar{
+    grid-area:sidebar;
+}
+.advertising{
+    grid-area:advertising;
+}
+.footer{
+    grid-area:footer;
+}
+.container{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "header header header header"
+    "nav    main   main   sidebar"
+    "nav    main   main   advertising"
+    "footer footer footer footer"
+    ;
+
+}
+@media  screen and (max-width:576px) {
+
+    .container{
+        grid-template-areas: 
+        "header"
+        "nav"   
+        "advertising"   
+        "main"
+        "sidebar"
+        "footer"
+        ;
+       
+    }
+    
+} */
+
