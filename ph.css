@@ -247,7 +247,7 @@ body{
 
 /* M8.2 simple responsive example */
 
-/* img{
+ /* img{
     width: 100%;
     height: 100%;
 }
@@ -297,11 +297,11 @@ body{
 
 
 
-} */
+}  */
 
 /* M8.3 responsive flex and grid layout */
 
-/* .box{
+  /* .box{
     background-color: gray;
     display: flex;
      justify-content: center;   
@@ -322,8 +322,8 @@ body{
 
 #box11, #box12{
     grid-column: span 3;
-} */
-
+}  
+ */
 
 /*  M8.4 practical grid area layout and media query */
 
@@ -378,5 +378,4 @@ body{
        
     }
     
-} */
-
+}  */
