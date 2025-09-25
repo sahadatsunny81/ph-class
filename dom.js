@@ -216,9 +216,6 @@
 
 
 
-
-
-
 // M29.2 function default parameter.....
 
 // function numbers(sum1=0,sum2=10){
@@ -305,7 +302,54 @@
 
 // M29.7 array and object destracturing.....
 
-// const {num1,num2}={}
+// const {price , brand, tax= "7%" }={price:200, brand:'apple'}
+
+// console.log(price,brand,tax);
+
+// const [a,b] = [10,20,30,40]
+// console.log(a,b);
+
+
+
+// M29.8 object data delete,seal,freeze,keys,values,entries.....
+
+
+// const student ={
+
+//     name:'sunny',
+//     roll:1,
+//     class:5,
+//     friend:'sakib'
+
+// }
+
+// Object.seal(student)  // seal can not delete or add new property but can change value...
+// Object.freeze(student) // freeze can not delete,add or change value...
+
+// const keys = Object.keys(student);
+// const values = Object.values(student);
+// const entries = Object.entries(student);
+// console.log(keys);
+// console.log(values);
+// console.log(entries);
+// const deletes = delete student.friend
+// console.log(student);
+
+
+
+// M29.9 loop through object by for in....
+
+// const student ={
+//     name:"sunny",
+//     roll:1,
+//     class:5
+// }
+
+// for(const loops in student){
+//     const chol = student[loops];
+//     console.log(loops,chol);
+// }
+
 
 
 
@@ -347,6 +391,8 @@
     // by use of (.map) you can function a loop shortly and output be an array....
 
 
+
+    
     
 // M30.4,5 foreach,filter,find,reduce and difference between them....
 
